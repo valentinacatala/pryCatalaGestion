@@ -38,35 +38,40 @@
             this.lblActividad.AutoSize = true;
             this.lblActividad.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblActividad.ForeColor = System.Drawing.Color.Teal;
-            this.lblActividad.Location = new System.Drawing.Point(13, 33);
+            this.lblActividad.Location = new System.Drawing.Point(17, 41);
+            this.lblActividad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblActividad.Name = "lblActividad";
-            this.lblActividad.Size = new System.Drawing.Size(59, 17);
+            this.lblActividad.Size = new System.Drawing.Size(76, 21);
             this.lblActividad.TabIndex = 0;
             this.lblActividad.Text = "Actividad";
             // 
             // txtActividad
             // 
-            this.txtActividad.Location = new System.Drawing.Point(89, 33);
+            this.txtActividad.Location = new System.Drawing.Point(101, 41);
+            this.txtActividad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtActividad.Name = "txtActividad";
-            this.txtActividad.Size = new System.Drawing.Size(205, 20);
+            this.txtActividad.Size = new System.Drawing.Size(281, 22);
             this.txtActividad.TabIndex = 1;
             // 
             // lsbActividad
             // 
             this.lsbActividad.FormattingEnabled = true;
-            this.lsbActividad.Location = new System.Drawing.Point(16, 87);
+            this.lsbActividad.ItemHeight = 16;
+            this.lsbActividad.Location = new System.Drawing.Point(13, 106);
+            this.lsbActividad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lsbActividad.Name = "lsbActividad";
-            this.lsbActividad.Size = new System.Drawing.Size(278, 238);
+            this.lsbActividad.Size = new System.Drawing.Size(369, 292);
             this.lsbActividad.TabIndex = 2;
             // 
             // frmMostrar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(330, 352);
+            this.ClientSize = new System.Drawing.Size(406, 433);
             this.Controls.Add(this.lsbActividad);
             this.Controls.Add(this.txtActividad);
             this.Controls.Add(this.lblActividad);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmMostrar";
             this.Text = "Mostrar";
             this.ResumeLayout(false);
