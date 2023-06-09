@@ -47,7 +47,7 @@
             // lsbActividad
             // 
             this.lsbActividad.FormattingEnabled = true;
-            this.lsbActividad.Location = new System.Drawing.Point(10, 86);
+            this.lsbActividad.Location = new System.Drawing.Point(10, 85);
             this.lsbActividad.Name = "lsbActividad";
             this.lsbActividad.Size = new System.Drawing.Size(278, 238);
             this.lsbActividad.TabIndex = 2;
