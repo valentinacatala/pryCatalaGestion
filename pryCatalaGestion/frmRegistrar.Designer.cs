@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegistrar));
             this.lblFecha = new System.Windows.Forms.Label();
             this.lblTipo = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -268,6 +269,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblTipo);
             this.Controls.Add(this.lblFecha);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmRegistrar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
