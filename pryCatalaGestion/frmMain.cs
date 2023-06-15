@@ -16,5 +16,33 @@ namespace pryCatalaGestion
         {
             InitializeComponent();
         }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            txtContrasena.PasswordChar = '*';
+            Controls.Add(txtContrasena);
+        }
+
+        private void cmdAceptar_Click(object sender, EventArgs e)
+        {
+            string usuario = txtUsuario.Text;
+            string contrasena= txtContrasena.Text;
+            frmRegistrar registrar = new frmRegistrar();
+            if (usuario == "Admin" && contrasena == "Admin")
+            {
+                this.Hide();
+                registrar.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Usuario y/o contraseña incorrectas", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation) ;
+               
+            }
+        }
+
+        private void cmdCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

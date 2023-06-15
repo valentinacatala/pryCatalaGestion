@@ -16,7 +16,7 @@ namespace pryCatalaGestion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmRegistrar());
+            Application.Run(new frmMain());
         }
     }
 }
