@@ -65,6 +65,8 @@
             this.ClientSize = new System.Drawing.Size(374, 199);
             this.Controls.Add(this.cmdConsultar);
             this.Controls.Add(this.cmdRegistrar);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmBienvenida";
             this.Text = "Bienvenida";
             this.ResumeLayout(false);

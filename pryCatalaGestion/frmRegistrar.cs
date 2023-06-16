@@ -17,6 +17,7 @@ namespace pryCatalaGestion
             InitializeComponent();
         }
 
+
         private void lblTipoActividad_Click(object sender, EventArgs e)
         {
 
