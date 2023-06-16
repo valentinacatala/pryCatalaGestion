@@ -27,11 +27,11 @@ namespace pryCatalaGestion
         {
             string usuario = txtUsuario.Text;
             string contrasena= txtContrasena.Text;
-            frmRegistrar registrar = new frmRegistrar();
+            frmBienvenida bienvenida = new frmBienvenida();
             if (usuario == "Admin" && contrasena == "Admin")
             {
                 this.Hide();
-                registrar.ShowDialog();
+                bienvenida.ShowDialog();
             }
             else
             {
