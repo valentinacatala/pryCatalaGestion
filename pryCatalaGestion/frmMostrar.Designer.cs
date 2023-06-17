@@ -38,37 +38,44 @@
             this.lblActividad.AutoSize = true;
             this.lblActividad.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblActividad.ForeColor = System.Drawing.Color.Teal;
-            this.lblActividad.Location = new System.Drawing.Point(8, 37);
+            this.lblActividad.Location = new System.Drawing.Point(11, 46);
+            this.lblActividad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblActividad.Name = "lblActividad";
-            this.lblActividad.Size = new System.Drawing.Size(67, 19);
+            this.lblActividad.Size = new System.Drawing.Size(81, 23);
             this.lblActividad.TabIndex = 0;
             this.lblActividad.Text = "Actividad";
             // 
             // lsbActividad
             // 
             this.lsbActividad.FormattingEnabled = true;
-            this.lsbActividad.Location = new System.Drawing.Point(10, 85);
+            this.lsbActividad.ItemHeight = 16;
+            this.lsbActividad.Location = new System.Drawing.Point(13, 105);
+            this.lsbActividad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lsbActividad.Name = "lsbActividad";
-            this.lsbActividad.Size = new System.Drawing.Size(278, 238);
+            this.lsbActividad.Size = new System.Drawing.Size(369, 292);
             this.lsbActividad.TabIndex = 2;
             // 
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(78, 39);
+            this.comboBox1.Location = new System.Drawing.Point(104, 48);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(210, 21);
+            this.comboBox1.Size = new System.Drawing.Size(279, 24);
             this.comboBox1.TabIndex = 3;
             // 
             // frmMostrar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(304, 352);
+            this.ClientSize = new System.Drawing.Size(405, 433);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.lsbActividad);
             this.Controls.Add(this.lblActividad);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmMostrar";
             this.Text = "Mostrar";
             this.ResumeLayout(false);

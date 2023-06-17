@@ -20,13 +20,20 @@ namespace pryCatalaGestion
         private void cmdRegistrar_Click(object sender, EventArgs e)
         {
             frmRegistrar registrar = new frmRegistrar();
+            this.Hide();
             registrar.ShowDialog();
         }
 
         private void cmdConsultar_Click(object sender, EventArgs e)
         {
             frmMostrar mostrar = new frmMostrar();
+            this.Hide();
             mostrar.ShowDialog();
+        }
+
+        private void frmBienvenida_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

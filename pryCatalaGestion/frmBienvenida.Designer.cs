@@ -37,9 +37,10 @@
             this.cmdRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cmdRegistrar.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdRegistrar.ForeColor = System.Drawing.Color.Teal;
-            this.cmdRegistrar.Location = new System.Drawing.Point(27, 65);
+            this.cmdRegistrar.Location = new System.Drawing.Point(36, 80);
+            this.cmdRegistrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmdRegistrar.Name = "cmdRegistrar";
-            this.cmdRegistrar.Size = new System.Drawing.Size(138, 73);
+            this.cmdRegistrar.Size = new System.Drawing.Size(184, 90);
             this.cmdRegistrar.TabIndex = 0;
             this.cmdRegistrar.Text = "Registrar Actividad";
             this.cmdRegistrar.UseVisualStyleBackColor = true;
@@ -50,9 +51,10 @@
             this.cmdConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cmdConsultar.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdConsultar.ForeColor = System.Drawing.Color.Teal;
-            this.cmdConsultar.Location = new System.Drawing.Point(195, 65);
+            this.cmdConsultar.Location = new System.Drawing.Point(260, 80);
+            this.cmdConsultar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmdConsultar.Name = "cmdConsultar";
-            this.cmdConsultar.Size = new System.Drawing.Size(138, 73);
+            this.cmdConsultar.Size = new System.Drawing.Size(184, 90);
             this.cmdConsultar.TabIndex = 1;
             this.cmdConsultar.Text = "Consultar Actividades";
             this.cmdConsultar.UseVisualStyleBackColor = true;
@@ -60,15 +62,17 @@
             // 
             // frmBienvenida
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(374, 199);
+            this.ClientSize = new System.Drawing.Size(499, 245);
             this.Controls.Add(this.cmdConsultar);
             this.Controls.Add(this.cmdRegistrar);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmBienvenida";
             this.Text = "Bienvenida";
+            this.Load += new System.EventHandler(this.frmBienvenida_Load);
             this.ResumeLayout(false);
 
         }

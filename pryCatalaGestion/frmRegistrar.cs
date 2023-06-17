@@ -58,5 +58,12 @@ namespace pryCatalaGestion
         {
 
         }
+
+        private void cmdCancelar_Click(object sender, EventArgs e)
+        {
+            frmBienvenida bienvenida = new frmBienvenida();
+            this.Hide();
+            bienvenida.ShowDialog();
+        }
     }
 }
