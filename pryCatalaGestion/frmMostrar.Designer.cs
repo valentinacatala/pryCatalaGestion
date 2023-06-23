@@ -35,6 +35,8 @@
             this.dgvReunion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvTareas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
+            this.cmdIrARegistro = new System.Windows.Forms.Button();
+            this.cmdCancelar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMostrar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,7 +51,7 @@
             this.dgvTareas});
             this.dgvMostrar.Location = new System.Drawing.Point(12, 54);
             this.dgvMostrar.Name = "dgvMostrar";
-            this.dgvMostrar.Size = new System.Drawing.Size(541, 328);
+            this.dgvMostrar.Size = new System.Drawing.Size(541, 294);
             this.dgvMostrar.TabIndex = 12;
             // 
             // dgvFecha
@@ -88,11 +90,35 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Registro de Actividades";
             // 
+            // cmdIrARegistro
+            // 
+            this.cmdIrARegistro.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdIrARegistro.Location = new System.Drawing.Point(182, 359);
+            this.cmdIrARegistro.Name = "cmdIrARegistro";
+            this.cmdIrARegistro.Size = new System.Drawing.Size(89, 23);
+            this.cmdIrARegistro.TabIndex = 14;
+            this.cmdIrARegistro.Text = "Ir a registro";
+            this.cmdIrARegistro.UseVisualStyleBackColor = true;
+            this.cmdIrARegistro.Click += new System.EventHandler(this.cmdIrARegistro_Click);
+            // 
+            // cmdCancelar
+            // 
+            this.cmdCancelar.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdCancelar.Location = new System.Drawing.Point(282, 359);
+            this.cmdCancelar.Name = "cmdCancelar";
+            this.cmdCancelar.Size = new System.Drawing.Size(89, 23);
+            this.cmdCancelar.TabIndex = 15;
+            this.cmdCancelar.Text = "Cancelar";
+            this.cmdCancelar.UseVisualStyleBackColor = true;
+            this.cmdCancelar.Click += new System.EventHandler(this.button2_Click);
+            // 
             // frmMostrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(565, 394);
+            this.Controls.Add(this.cmdCancelar);
+            this.Controls.Add(this.cmdIrARegistro);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvMostrar);
             this.MaximizeBox = false;
@@ -115,5 +141,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvReunion;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvTareas;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button cmdIrARegistro;
+        private System.Windows.Forms.Button cmdCancelar;
     }
 }

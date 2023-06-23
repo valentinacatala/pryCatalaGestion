@@ -32,34 +32,36 @@ namespace pryCatalaGestion
 
         private void cmdGrabar_Click(object sender, EventArgs e)
         {
+            string varTareas = "";
+            string varReunion = "";
             if (dtpFecha.Value >= DateTime.Today)
             {
                 if (lstTipoActividad.SelectedIndex != -1)
                 {
                     if (optSi.Checked==true)
                     {
-                        
+                        varReunion = "SI";
                     }
                     else
                     {
-
+                        varReunion = "NO";
                     }
 
                     if (chkDebate.Checked)
                     {
-
+                        varTareas = "Debate, ";
                     }
                     if (chkInvestigacion.Checked)
                     {
-
+                        varTareas = varTareas + "Investigacion, ";
                     }
                     if (chkNotasReunion.Checked)
                     {
-
+                        varTareas = varTareas + "Notas Reunion, ";
                     }
                     if (chkRepositorio.Checked)
                     {
-
+                        varTareas = varTareas + "Repositorio, ";
                     }
 
                     if (txtDetalle.Text != "")
@@ -69,8 +71,11 @@ namespace pryCatalaGestion
                         ventanaMostrar.matrizTareas[indiceFilaRegistro, 0] = dtpFecha.Value.ToString();
                         ventanaMostrar.matrizTareas[indiceFilaRegistro, 1] = lstTipoActividad.Text;
                         ventanaMostrar.matrizTareas[indiceFilaRegistro, 2] = txtDetalle.Text;
+                        ventanaMostrar.matrizTareas[indiceFilaRegistro, 3] = varReunion;
+                        ventanaMostrar.matrizTareas[indiceFilaRegistro, 4] = varTareas;
 
                         indiceFilaRegistro++;
+
                         if (indiceFilaRegistro == ventanaMostrar.matrizTareas.GetLength(0))
                         {
                             cmdRegistrar.Enabled = false;

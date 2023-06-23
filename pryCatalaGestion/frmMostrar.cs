@@ -24,6 +24,20 @@ namespace pryCatalaGestion
 
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmBienvenida bienvenida = new frmBienvenida();
+            this.Hide();
+            bienvenida.ShowDialog();
+        }
+
+        private void cmdIrARegistro_Click(object sender, EventArgs e)
+        {
+            frmRegistrar registrar = new frmRegistrar();
+            this.Hide();
+            registrar.ShowDialog();
+        }
+
         private void frmMostrar_Load(object sender, EventArgs e)
         {
             indiceFilaRegistro = 0;
