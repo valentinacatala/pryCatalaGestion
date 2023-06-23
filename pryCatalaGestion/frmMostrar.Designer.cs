@@ -28,56 +28,79 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblActividad = new System.Windows.Forms.Label();
-            this.lsbActividad = new System.Windows.Forms.ListBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dgvMostrar = new System.Windows.Forms.DataGridView();
+            this.dgvFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvDetalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvReunion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvTareas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMostrar)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblActividad
+            // dgvMostrar
             // 
-            this.lblActividad.AutoSize = true;
-            this.lblActividad.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblActividad.ForeColor = System.Drawing.Color.Teal;
-            this.lblActividad.Location = new System.Drawing.Point(11, 46);
-            this.lblActividad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblActividad.Name = "lblActividad";
-            this.lblActividad.Size = new System.Drawing.Size(81, 23);
-            this.lblActividad.TabIndex = 0;
-            this.lblActividad.Text = "Actividad";
+            this.dgvMostrar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMostrar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvFecha,
+            this.dgvTipo,
+            this.dgvDetalle,
+            this.dgvReunion,
+            this.dgvTareas});
+            this.dgvMostrar.Location = new System.Drawing.Point(12, 54);
+            this.dgvMostrar.Name = "dgvMostrar";
+            this.dgvMostrar.Size = new System.Drawing.Size(541, 328);
+            this.dgvMostrar.TabIndex = 12;
             // 
-            // lsbActividad
+            // dgvFecha
             // 
-            this.lsbActividad.FormattingEnabled = true;
-            this.lsbActividad.ItemHeight = 16;
-            this.lsbActividad.Location = new System.Drawing.Point(13, 105);
-            this.lsbActividad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.lsbActividad.Name = "lsbActividad";
-            this.lsbActividad.Size = new System.Drawing.Size(369, 292);
-            this.lsbActividad.TabIndex = 2;
+            this.dgvFecha.HeaderText = "Fecha";
+            this.dgvFecha.Name = "dgvFecha";
             // 
-            // comboBox1
+            // dgvTipo
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(104, 48);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(279, 24);
-            this.comboBox1.TabIndex = 3;
+            this.dgvTipo.HeaderText = "Tipo";
+            this.dgvTipo.Name = "dgvTipo";
+            // 
+            // dgvDetalle
+            // 
+            this.dgvDetalle.HeaderText = "Detalle";
+            this.dgvDetalle.Name = "dgvDetalle";
+            // 
+            // dgvReunion
+            // 
+            this.dgvReunion.HeaderText = "Reunion";
+            this.dgvReunion.Name = "dgvReunion";
+            // 
+            // dgvTareas
+            // 
+            this.dgvTareas.HeaderText = "Tareas";
+            this.dgvTareas.Name = "dgvTareas";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Teal;
+            this.label1.Location = new System.Drawing.Point(178, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(193, 23);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Registro de Actividades";
             // 
             // frmMostrar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(405, 433);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.lsbActividad);
-            this.Controls.Add(this.lblActividad);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ClientSize = new System.Drawing.Size(565, 394);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dgvMostrar);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmMostrar";
             this.Text = "Mostrar";
+            this.Load += new System.EventHandler(this.frmMostrar_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMostrar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -85,8 +108,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblActividad;
-        private System.Windows.Forms.ListBox lsbActividad;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DataGridView dgvMostrar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvFecha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvTipo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvDetalle;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvReunion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvTareas;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -41,10 +41,9 @@
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(13, 33);
-            this.lblUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUsuario.Location = new System.Drawing.Point(10, 27);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(69, 23);
+            this.lblUsuario.Size = new System.Drawing.Size(57, 20);
             this.lblUsuario.TabIndex = 1;
             this.lblUsuario.Text = "Usuario";
             // 
@@ -52,37 +51,34 @@
             // 
             this.lblContraseña.AutoSize = true;
             this.lblContraseña.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContraseña.Location = new System.Drawing.Point(13, 80);
-            this.lblContraseña.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblContraseña.Location = new System.Drawing.Point(10, 65);
             this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(98, 23);
+            this.lblContraseña.Size = new System.Drawing.Size(79, 20);
             this.lblContraseña.TabIndex = 2;
             this.lblContraseña.Text = "Contraseña";
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(119, 34);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUsuario.Location = new System.Drawing.Point(89, 28);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(132, 22);
+            this.txtUsuario.Size = new System.Drawing.Size(100, 20);
             this.txtUsuario.TabIndex = 3;
             // 
             // txtContrasena
             // 
-            this.txtContrasena.Location = new System.Drawing.Point(119, 82);
-            this.txtContrasena.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtContrasena.Location = new System.Drawing.Point(89, 67);
             this.txtContrasena.Name = "txtContrasena";
-            this.txtContrasena.Size = new System.Drawing.Size(132, 22);
+            this.txtContrasena.Size = new System.Drawing.Size(100, 20);
             this.txtContrasena.TabIndex = 4;
             // 
             // cmdAceptar
             // 
             this.cmdAceptar.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdAceptar.ForeColor = System.Drawing.Color.Teal;
-            this.cmdAceptar.Location = new System.Drawing.Point(136, 126);
-            this.cmdAceptar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmdAceptar.Location = new System.Drawing.Point(102, 102);
+            this.cmdAceptar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmdAceptar.Name = "cmdAceptar";
-            this.cmdAceptar.Size = new System.Drawing.Size(101, 28);
+            this.cmdAceptar.Size = new System.Drawing.Size(76, 23);
             this.cmdAceptar.TabIndex = 5;
             this.cmdAceptar.Text = "Aceptar";
             this.cmdAceptar.UseVisualStyleBackColor = true;
@@ -92,10 +88,10 @@
             // 
             this.cmdCancelar.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdCancelar.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.cmdCancelar.Location = new System.Drawing.Point(39, 126);
-            this.cmdCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmdCancelar.Location = new System.Drawing.Point(29, 102);
+            this.cmdCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmdCancelar.Name = "cmdCancelar";
-            this.cmdCancelar.Size = new System.Drawing.Size(91, 28);
+            this.cmdCancelar.Size = new System.Drawing.Size(68, 23);
             this.cmdCancelar.TabIndex = 6;
             this.cmdCancelar.Text = "Cancelar";
             this.cmdCancelar.UseVisualStyleBackColor = true;
@@ -103,9 +99,9 @@
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(296, 180);
+            this.ClientSize = new System.Drawing.Size(222, 146);
             this.Controls.Add(this.cmdCancelar);
             this.Controls.Add(this.cmdAceptar);
             this.Controls.Add(this.txtContrasena);
@@ -113,7 +109,6 @@
             this.Controls.Add(this.lblContraseña);
             this.Controls.Add(this.lblUsuario);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmMain";
